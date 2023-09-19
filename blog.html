@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisyUi and tailwindcss link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/9dc7153475.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-base-100 w-11/12 mx-auto py-4">
+        <div class="navbar-start cursor-pointer">
+          <img
+            onclick="window.location.href='index.html'"
+            src="images/Logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="w-11/12 md:w-8/12 mx-auto my-20">
+        <h1 class="text-4xl md:text-5xl font-bold mb-10">
+          Difference between var, let, and const keyword in JavaScript .
+        </h1>
+        <p class="text-2xl font-semibold">
+          Scope essentially means where these variables are available for use.
+          In JavaScript, the scope of variables declared with
+          <span class="font-bold text-3xl">var, let,</span> and
+          <span class="font-bold text-3xl">Const</span> differs based on their
+          declaration.
+        </p>
+        <div class="py-10">
+          <h2 class="text-3xl font-bold mb-5">Var</h2>
+          <p class="text-2xl">
+            Variables declared with
+            <span class="font-bold">var</span> are in the function scope. When
+            <span class="font-bold">var</span> variable declared out of the
+            function is called global scope. This means that it is available and
+            can be accessed only within that function.
+          </p>
+          <p class="text-2xl py-5">
+            <span class="font-bold">var</span> variables can be re-declared and
+            updated. This means that we can do this within the same scope and
+            won't get an error.
+          </p>
+        </div>
+        <div class="py-10">
+          <h2 class="text-3xl font-bold mb-5">Let</h2>
+          <p class="text-2xl">
+            Variables declared as <span class="font-bold">let</span> are in the
+            block scope. So a variable declared in a block with
+            <span class="font-bold">let</span> is only available for use within
+            that block. It's no surprise as it comes as an improvement to var
+            declarations.
+            <span class="font-semibold"
+              >let is now preferred for variable declaration.</span
+            >
+          </p>
+          <p class="text-2xl py-5">
+            <span class="font-bold">let</span> can be updated but not
+            re-declared. Just like var, a variable declared with let can be
+            updated within its scope.
+          </p>
+        </div>
+        <div class="py-10">
+          <h2 class="text-3xl font-bold mb-5">Const</h2>
+          <p class="text-2xl">
+            Variables declared as <span class="font-bold">Const</span> are in
+            the block scope. Like
+            <span class="font-bold">let</span> declarations,
+            <span class="font-bold">Const</span> declarations can only be
+            accessed within the block they were declared.
+          </p>
+          <p class="text-2xl py-5">
+            Main concept of const variable is
+            <span class="font-bold">const</span> cannot be updated or
+            re-declared This means that the value of a variable declared with
+            <span class="font-bold">const</span> remains the same within its
+            scope. It cannot be updated or re-declared. So if we declare a
+            variable with const
+          </p>
+        </div>
+      </section>
+
+      <!-- null and undefined -->
+      <section class="w-11/12 md:w-8/12 mx-auto my-20">
+        <h1 class="text-4xl md:text-5xl font-bold mb-10 uppercase">
+          use cases of <span class="font-bold">`null`</span> and
+          <span class="font-bold">`undefined`</span>
+        </h1>
+        <h2 class="text-3xl font-bold mb-5">Null</h2>
+        <p class="text-2xl mb-10">
+          <span class="font-bold">Null</span> in JavaScript means an empty value
+          and is also a primitive type in JavaScript. The variable which has
+          been assigned as <span class="font-bold">null</span> contains no
+          value.
+        </p>
+
+        <h2 class="text-3xl font-bold mb-5">Undefined</h2>
+        <p class="text-2xl">
+          <span class="font-bold">undefined,</span> in javascript means the
+          variable has been declared, but its value has not been assigned.
+        </p>
+
+        <h1 class="text-4xl md:text-5xl font-bold mt-20 mb-10">
+          What is a REST API?
+        </h1>
+        <p class="text-2xl">
+          An API, or application programming interface, is a set of rules that
+          define how applications or devices can connect to and communicate with
+          each other. A REST API is an API that conforms to the design
+          principles of the REST, or representational state transfer
+          architectural style. For this reason, REST APIs are sometimes referred
+          to RESTful APIs.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
